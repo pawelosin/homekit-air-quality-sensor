@@ -1,8 +1,6 @@
 /*
  * Example of using esp-homekit library to implement an air quality sensor usign and MQ135
  *
- * Copyright 2018 David B Brown @maccoylton
- *  
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -19,7 +17,7 @@
  *
  */
 
-#define DEVICE_MANUFACTURER "David B Brown"
+#define DEVICE_MANUFACTURER "Lizzus"
 #define DEVICE_NAME "Air-Quality"
 #define DEVICE_MODEL "1"
 #define DEVICE_SERIAL "12345678"
