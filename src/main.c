@@ -296,26 +296,7 @@ void air_quality_sensor_init() {
 void user_init(void) {
 
     uart_set_baud(0, 115200);
-    xTaskCreate(udplog_send, "logsend", 512, NULL, 4, NULL);
-
- /*   UDPLOG ("hello world\n\n\n");
-
-    set_write_stdout(udplogger_stdout_write);
-
-    printf ("hello world 2\n");
-    printf ("hello world 3\n");
-    printf ("hello world 4\n");
-    printf ("hello world 5\n");
-    printf ("hello world 6\n");
-    printf ("hello world 7\n");
-    printf ("hello world 8\n");
-    printf ("hello world 9\n");
-
-    set_write_stdout(NULL);
-*/
-    
-    
-    
+    xTaskCreate(udplog_send, "logsend", 512, NULL, 4, NULL)
     create_accessory_name(); 
     air_quality_sensor_init();
     temperature_sensor_init();
